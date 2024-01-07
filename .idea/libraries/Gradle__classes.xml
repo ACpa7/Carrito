@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Gradle: classes">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/nxt/libs/classes.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

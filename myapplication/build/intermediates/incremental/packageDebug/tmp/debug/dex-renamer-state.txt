@@ -1,10 +1,10 @@
-#Sun Jan 07 12:52:53 CST 2024
+#Sun Jan 07 14:52:27 CST 2024
 path.2=classes_0.dex
 path.1=classes.dex
 path.0=classes.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-base.2=D\:\\Nueva carpeta\\Version2.0\\Version2.0\\myapplication\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\out\\classes_0.dex
-base.1=D\:\\Nueva carpeta\\Version2.0\\Version2.0\\myapplication\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
-base.0=D\:\\Nueva carpeta\\Version2.0\\Version2.0\\myapplication\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
+base.2=/Users/Luis/Documents/GitHub/Carrito/myapplication/build/intermediates/dex/debug/mergeLibDexDebug/out/classes_0.dex
+base.1=/Users/Luis/Documents/GitHub/Carrito/myapplication/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
+base.0=/Users/Luis/Documents/GitHub/Carrito/myapplication/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex

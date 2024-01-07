@@ -332,6 +332,8 @@ public class MainActivity extends AppCompatActivity {
         x = newX;
         y = newY;
 
+        // 1cm - 8.7px
+
         // Update the position of the car ImageView
         carImageView.setX(x);
         carImageView.setY(y);

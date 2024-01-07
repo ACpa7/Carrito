@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -13,10 +12,10 @@
         android:id="@+id/RelativeLayout1"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/background_text"
@@ -35,10 +34,11 @@
         android:layout_height="800px"
         android:layout_marginLeft="800px"
         android:layout_marginBottom="550px"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toTopOf="parent">
+
         <ImageView
             android:id="@+id/map"
             android:layout_width="1600px"
@@ -48,10 +48,10 @@
 
         <ImageView
             android:id="@+id/car"
-            android:layout_width="80dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="90px"
-            android:layout_marginTop="565px"
+            android:layout_width="150px"
+            android:layout_height="155px"
+            android:layout_marginLeft="305px"
+            android:layout_marginTop="95px"
             android:src="@drawable/car" />
 
     </RelativeLayout>
@@ -150,23 +150,23 @@
             android:id="@+id/textViewLabelBluetooth"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginTop="300dp"
             android:layout_alignParentLeft="true"
+            android:layout_marginTop="300dp"
             android:layout_marginRight="40dp"
             android:layout_toLeftOf="@+id/textViewValueBluetooth"
             android:paddingLeft="30dp"
             android:text="@string/bluetooth_label"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent" />
 
         <TextView
             android:id="@+id/textViewValueBluetooth"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/textViewLabelBluetooth"
-            android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
             android:gravity="right"
             android:paddingRight="1000dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
@@ -177,33 +177,34 @@
             android:id="@+id/textViewLabelDistanceBackSide"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
             android:layout_below="@+id/textViewLabelDistanceFrontSide"
+            android:layout_alignParentLeft="true"
             android:layout_marginTop="10dp"
             android:layout_toLeftOf="@+id/textViewValueDistanceBackSide"
             android:paddingLeft="30dp"
             android:text="@string/distance_back_side_value"
             android:textSize="20dp" />
-//////////////////////////////////
+        //////////////////////////////////
 
 
         <TextView
             android:id="@+id/text_parking_slot_1x"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
             android:layout_below="@+id/textViewLabelDistanceBackSide"
+            android:layout_alignParentLeft="true"
             android:layout_marginTop="5dp"
             android:layout_toLeftOf="@+id/textViewValueDistanceBackSide"
             android:paddingLeft="30dp"
             android:text="@string/parking_slot_1x"
             android:textSize="20dp" />
+
         <TextView
             android:id="@+id/text_parking_slot_1y"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
             android:layout_below="@+id/text_parking_slot_1x"
+            android:layout_alignParentLeft="true"
             android:layout_marginTop="1dp"
             android:layout_toLeftOf="@+id/textViewValueDistanceBackSide"
             android:paddingLeft="30dp"
@@ -215,8 +216,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/textViewValueLabel"
-            android:layout_alignParentRight="true"
             android:layout_alignTop="@+id/textViewValueLabel"
+            android:layout_alignParentRight="true"
             android:gravity="right"
             android:paddingRight="1000dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
@@ -227,32 +228,30 @@
             android:layout_width="wrap_content"
             android:layout_height="34dp"
             android:layout_alignBaseline="@+id/textViewLabelX"
-            android:layout_alignParentRight="true"
             android:layout_alignTop="@+id/textViewLabelX"
+            android:layout_alignParentRight="true"
             android:gravity="right"
             android:paddingRight="1000dp"
-            android:textSize="20dp" >
-        </TextView>
+            android:textSize="20dp"></TextView>
 
         <TextView
             android:id="@+id/textViewValueY"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/textViewLabelY"
-            android:layout_alignParentRight="true"
             android:layout_alignTop="@+id/textViewLabelY"
+            android:layout_alignParentRight="true"
             android:gravity="right"
             android:paddingRight="1000dp"
-            android:textSize="20dp" >
-        </TextView>
+            android:textSize="20dp"></TextView>
 
         <TextView
             android:id="@+id/TextViewValueAngle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/TextViewLableAngle"
-            android:layout_alignParentRight="true"
             android:layout_alignTop="@+id/TextViewLableAngle"
+            android:layout_alignParentRight="true"
             android:gravity="right"
             android:paddingRight="1000dp"
             android:textSize="20dp" />
@@ -262,8 +261,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/textViewLabelDistanceFront"
-            android:layout_alignParentRight="true"
             android:layout_alignTop="@+id/textViewLabelDistanceFront"
+            android:layout_alignParentRight="true"
             android:gravity="right"
             android:paddingRight="1000dp"
             android:textSize="20dp" />
@@ -272,8 +271,8 @@
             android:id="@+id/textViewLabelDistanceBack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
             android:layout_below="@+id/textViewLabelDistanceFront"
+            android:layout_alignParentLeft="true"
             android:layout_marginTop="10dp"
             android:layout_toLeftOf="@+id/textViewValueDistanceBack"
             android:paddingLeft="30dp"
@@ -285,8 +284,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/textViewLabelDistanceBack"
-            android:layout_alignParentRight="true"
             android:layout_alignTop="@+id/textViewLabelDistanceBack"
+            android:layout_alignParentRight="true"
             android:gravity="right"
             android:paddingRight="1000dp"
             android:textSize="20dp" />
@@ -295,8 +294,8 @@
             android:id="@+id/textViewLabelDistanceFrontSide"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
             android:layout_below="@+id/textViewLabelDistanceBack"
+            android:layout_alignParentLeft="true"
             android:layout_marginTop="10dp"
             android:layout_toLeftOf="@+id/textViewValueDistanceFrontSide"
             android:paddingLeft="30dp"
@@ -308,8 +307,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/textViewLabelDistanceFrontSide"
-            android:layout_alignParentRight="true"
             android:layout_alignTop="@+id/textViewLabelDistanceFrontSide"
+            android:layout_alignParentRight="true"
             android:gravity="right"
             android:paddingRight="1000dp"
             android:textSize="20dp" />
@@ -319,29 +318,31 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/textViewLabelDistanceBackSide"
-            android:layout_alignParentRight="true"
             android:layout_alignTop="@+id/textViewLabelDistanceBackSide"
+            android:layout_alignParentRight="true"
             android:gravity="right"
             android:paddingRight="1000dp"
             android:textSize="20dp" />
         ///////////
+
         <TextView
             android:id="@+id/textViewValue_parking_slot_1x"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/text_parking_slot_1x"
-            android:layout_alignParentRight="true"
             android:layout_alignTop="@+id/text_parking_slot_1x"
+            android:layout_alignParentRight="true"
             android:gravity="right"
             android:paddingRight="1000dp"
             android:textSize="20dp" />
+
         <TextView
             android:id="@+id/textViewValue_parking_slot_1y"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/text_parking_slot_1y"
-            android:layout_alignParentRight="true"
             android:layout_alignTop="@+id/text_parking_slot_1y"
+            android:layout_alignParentRight="true"
             android:gravity="right"
             android:paddingRight="1000dp"
             android:textSize="20dp" />
@@ -360,8 +361,28 @@
             android:textOn="SCOUT" />
 
 
-
     </RelativeLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
